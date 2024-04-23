@@ -1,62 +1,71 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="/Frontend/Signin.css">
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
 
-      <title>Rights Quest/login</title>
-   </head>
-   <body>
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="/Frontend/Signin.css">
 
-    <header>
-        <a class="logo" href="/"><img class= "logo"src="/Images/logo.png" alt="logo"></a>
+   <title>Rights Quest/login</title>
+</head>
 
-        <a class="cta" href="https://www.childlineindia.org/a/about/childline-india#:~:text=Call%201098%20%E2%80%93%20Any%20child%20or,2"> <!-- Add the URL here -->
-            <button class="GetHelp">Get Help 📞</button>
-        </a>
-        
-    </header>
+<body>
+
+   <header>
+      <a class="logo" href="/"><img class="logo" src="/Images/logo.png" alt="logo"></a>
+
+      <a class="cta"
+         href="https://www.childlineindia.org/a/about/childline-india#:~:text=Call%201098%20%E2%80%93%20Any%20child%20or,2">
+         <!-- Add the URL here -->
+         <button class="GetHelp">Get Help 📞</button>
+      </a>
+
+   </header>
 
 
 
 
-      <div class="login">
+   <div class="login">
 
-         <form action="" class="login__form">
-            <h1 class="login__title">Login</h1>
+      <form action="" class="login__form">
+         <h1 class="login__title">Login</h1>
 
-            <div class="login__inputs">
-               <div class="login__box">
-                  <input type="email" placeholder="Registration Number" required class="login__input">
-                  <i class="ri-mail-fill"></i>
-               </div>
-
-               <div class="login__box">
-                  <input type="password" placeholder="DDMMYY" required class="login__input">
-                  <i class="ri-lock-2-fill"></i>
-               </div>
+         <div class="login__inputs">
+            <div class="login__box">
+               <input id="email_input" type="email" placeholder="Registration Number" required class="login__input"
+                  autocomplete="off">
+               <i class="ri-mail-fill"></i>
             </div>
 
-            <div class="login__check">
-               <div class="login__check-box">
-                  <input type="checkbox" class="login__check-input" id="user-check">
-                  <label for="user-check" class="login__check-label">Remember me</label>
-               </div>
+            <div class="login__box">
+               <input id="password_input" type="password" placeholder="DDMMYY" required class="login__input"
+                  autocomplete="off">
+               <i class="ri-lock-2-fill"></i>
+            </div>
+         </div>
 
+         <div class="login__check">
+            <div class="login__check-box">
+               <input type="checkbox" class="login__check-input" id="user-check">
+               <label for="user-check" class="login__check-label">Remember me</label>
             </div>
 
-            <button type="submit" class="login__button">Login</button>
+         </div>
 
-            <div class="login__register">
-               Don't have an account? <a href="#">Register</a>
-            </div>
-         </form>
-      </div>
-   </body>
+         <button id="login_button" type="submit" class="login__button">Login</button>
+
+         <div class="login__register">
+            Don't have an account? <a href="#">Register</a>
+         </div>
+      </form>
+   </div>
+
+   <script src="./Signin.js"></script>
+</body>
+
 </html>
